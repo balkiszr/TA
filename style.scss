@@ -1,0 +1,24 @@
+.navbar{
+
+    a{
+      font-size: 1.7rem;
+      color:$light-color;
+      margin:0 1rem;
+
+      &:hover{
+        color:$green;
+      }
+    }
+  }
+
+  .navbar{
+    position: absolute;
+    top:99%; left:0; right:0;
+    background:$white;
+    border-top: $border;
+    border-bottom: $border;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+
+    &.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
